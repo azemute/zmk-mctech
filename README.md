@@ -11,7 +11,6 @@
 </div>
 <br>
 
-
 - [INTRO](#INTRO)
 - [QUICK START](#QUICK-START)
   - [keymap corne](#keymap-corne)
