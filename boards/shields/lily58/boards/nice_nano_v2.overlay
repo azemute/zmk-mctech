@@ -13,6 +13,22 @@
             low-power-enable;
         };
     };
+
+    pro_micro_i2c: pro_micro_i2c {
+            group1 {
+                    psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
+                            <NRF_PSEL(TWIM_SCL, 0, 22)>;
+            };
+    };
+
+    i2c0_sleep: i2c0_sleep {
+        group1 {
+                    psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
+                            <NRF_PSEL(TWIM_SCL, 0, 22)>;
+            low-power-enable;
+        };
+    };
+
 };
 
 &spi3 {
@@ -44,3 +60,4 @@
         zmk,underglow = &led_strip;
     };
 };
+// vim: filetype=dts fdm=marker:
